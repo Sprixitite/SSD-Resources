@@ -1,16 +1,16 @@
 using System;
 
-namespace Mod8Task1 {
+namespace Intro {
 
-    public class Rect : Shape {
+    public class Tri : Shape {
 
-        public Rect(float w, float h) {
+        public Tri(float w, float h) {
             width = w;
             height = h;
         }
 
         public override float calculate_area() {
-            return width*height;
+            return (width*height)/2;
         }
 
     }

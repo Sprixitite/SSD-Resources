@@ -1,6 +1,6 @@
 using System;
 
-namespace Mod8Task1 {
+namespace Intro {
 
     public abstract class Shape {
 

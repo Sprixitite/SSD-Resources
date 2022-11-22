@@ -6,19 +6,13 @@ namespace Mod8Task1 {
 
         public static void Main(string[] args) {
 
-            Rect my_rectangle = new Rect(2, 2);
-            Tri my_triangle = new Tri(2, 2);
+            AnonymousArtwork aa = new AnonymousArtwork("Ryan William Montgomery", 1, "The Guiltiest Gear", 1000000000);
+            Sculpture s = new Sculpture("Samuel David Martin", 02, "Little Man, Big Mac", 5, "Beef", 0.2f, 0.25f);
+            Painting p = new Painting("Rory James Cousins", 03, "Coffee Stain", -1, "Coffee", 5, 5);
 
-            print_dimensions_and_area(my_rectangle);
-            Console.Write("\n");
-            print_dimensions_and_area(my_triangle);
-
-        }
-
-        public static void print_dimensions_and_area(Shape s) {
-
-            s.print_dimensions();
-            Console.WriteLine("Area: " + s.calculate_area());
+            Console.WriteLine(aa.ToString());
+            Console.WriteLine(s.ToString());
+            Console.WriteLine(p.ToString());
 
         }
 
