@@ -13,6 +13,23 @@ namespace Animals {
             Console.WriteLine(my_cat);
             Console.WriteLine(my_dog);
 
+            Animal[] animals = new Animal[] {
+                my_cat,
+                my_dog
+            };
+
+            foreach (Animal animal in animals) {
+
+                if (animal.GetType() == typeof(Cat)) {
+                    ((Cat)animal).Meow();
+                } else if (animal.GetType() == typeof(Dog)) {
+                    ((Dog)animal).bark();
+                } else {
+                    throw new NotImplementedException();
+                }
+
+            }
+
         }
 
     }

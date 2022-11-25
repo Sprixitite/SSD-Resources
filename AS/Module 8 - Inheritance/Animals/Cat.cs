@@ -15,7 +15,7 @@ namespace Animals {
             protected set;
         }
 
-        void Meow() { Console.WriteLine("Meow"); }
+        public  void Meow() { Console.WriteLine("Meow"); }
 
         public override string ToString() {
             string cat_string = "Dog:\n";
