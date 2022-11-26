@@ -16,7 +16,8 @@ namespace Animals {
         }
 
         public void bark() {
-            Console.WriteLine("ARF ARF");
+            string bork="ARF";
+            Console.WriteLine(bork*dog_bark_volume);
         }
 
         public override string ToString() {
