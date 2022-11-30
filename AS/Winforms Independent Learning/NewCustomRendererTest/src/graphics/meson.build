@@ -1,1 +1,1 @@
-src += files('Vector.cs')
+src += files('Vector.cs', 'Voxel.cs')
